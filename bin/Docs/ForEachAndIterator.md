@@ -88,8 +88,5 @@
      System.out.println(fruits); // Output: [Apple, Cherry]
      ```
 
-#### 8. Conclusion
    - **When to Use For-Each Loop**: Use for-each loops for simple iterations where you don't need to modify the collection or access the index.
    - **When to Use Iterator**: Use iterators when you need more control over the iteration process, such as removing elements or performing complex operations.
-
-This outline provides a comprehensive overview of for-each loops and the `Iterator` utility in Java, including their syntax, advantages, limitations, and practical usage examples.
