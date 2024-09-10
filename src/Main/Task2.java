@@ -1,3 +1,4 @@
+package Main; 
 /* Task 2
 
 Given a word, write a function to count how many times each character appears in the word in java. 
@@ -6,6 +7,12 @@ Use keyset and entry set to print the frequency of each character. */
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class represents a program that calculates the frequency of each character in a given word.
+ * It uses a HashMap to store the frequency of each character.
+ * The main method initializes a word and populates the frequency map.
+ * It then prints the frequency of each character using the entrySet for better performance.
+ */
 public class Task2 {
     public static void main(String[] args) {
         String word = "hello";

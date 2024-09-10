@@ -1000,3 +1000,175 @@ This UML class diagram shows the `Map` interface and its `HashMap` implementatio
 - **LinkedHashMap**: Choose when you need a map with predictable iteration order.
 
 These factors and performance considerations will help you choose the appropriate data structure based on your specific requirements.
+
+### UML Depictions of LinkedHashSet and LinkedHashMap
+
+#### 1. LinkedHashSet
+A `LinkedHashSet` is a HashSet with predictable iteration order. It maintains a doubly-linked list running through all of its entries to preserve the order in which elements were inserted.
+
+```plaintext
++-------------------+
+|    LinkedHashSet  |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashSet       |
++-------------------+
+| - map             |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     AbstractSet   |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     AbstractCollection |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     Collection    |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+```
+
+#### 2. LinkedHashMap
+A `LinkedHashMap` is a HashMap with predictable iteration order. It maintains a doubly-linked list running through all of its entries to preserve the order in which key-value pairs were inserted.
+
+```plaintext
++-------------------+
+|   LinkedHashMap   |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
+| - accessOrder     |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + entrySet()      |
+| + values()        |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashMap       |
++-------------------+
+| - table           |
+| - size            |
+| - loadFactor      |
+| - threshold       |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + entrySet()      |
+| + values()        |
++-------------------+
+          ^
+          |
++-------------------+
+|     AbstractMap   |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + entrySet()      |
+| + values()        |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + entrySet()      |
+| + values()        |
++-------------------+
+```
+
+### Explanation
+
+1. **LinkedHashSet**:
+   - **LinkedHashSet** extends `HashSet`, which in turn extends `AbstractSet` and implements the `Set` interface.
+   - **Fields**:
+     - `header` and `tail`: Used to maintain the insertion order.
+     - `size`: Number of elements in the set.
+   - **Methods**:
+     - `add(element)`, `remove(element)`, `contains(element)`, `size()`, `clear()`, `iterator()`: Basic set operations.
+
+2. **LinkedHashMap**:
+   - **LinkedHashMap** extends `HashMap`, which in turn extends `AbstractMap` and implements the `Map` interface.
+   - **Fields**:
+     - `header` and `tail`: Used to maintain the insertion order.
+     - `size`: Number of key-value pairs in the map.
+     - `accessOrder`: Determines if the iteration order is based on access order.
+   - **Methods**:
+     - `put(key, value)`, `get(key)`, `remove(key)`, `containsKey(key)`, `containsValue(value)`, `size()`, `clear()`, `keySet()`, `entrySet()`, `values()`: Basic map operations.
+
+These UML depictions provide a visual representation of the structure and relationships of `LinkedHashSet` and `LinkedHashMap` in Java, highlighting their inheritance hierarchy and key methods.
