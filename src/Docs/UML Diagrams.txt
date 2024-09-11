@@ -1,0 +1,570 @@
+To create UML diagrams for every type of collection in the Java 22 Collections API, we will focus on the main interfaces and classes provided by the API. Here are the primary collections:
+
+1. `Collection`
+2. `List`
+3. `Set`
+4. `Queue`
+5. `Deque`
+6. [`Map`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1370%2C%22character%22%3A8%7D%7D%5D%2C%22e8fdf61d-2424-4c55-814c-1d4d7adea9cf%22%5D "Go to definition")
+
+### UML Diagram for `Collection`
+```plaintext
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+```
+
+### UML Diagram for `List`
+```plaintext
++-------------------+
+|   <<interface>>   |
+|       List        |
++-------------------+
+| + get(index)      |
+| + set(index, element) |
+| + add(index, element) |
+| + remove(index)   |
+| + indexOf(element)|
+| + lastIndexOf(element) |
+| + listIterator()  |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `Set`
+```plaintext
++-------------------+
+|   <<interface>>   |
+|       Set         |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `Queue`
+```plaintext
++-------------------+
+|   <<interface>>   |
+|      Queue        |
++-------------------+
+| + offer(element)  |
+| + poll()          |
+| + peek()          |
+| + add(element)    |
+| + remove()        |
+| + element()       |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `Deque`
+```plaintext
++-------------------+
+|   <<interface>>   |
+|      Deque        |
++-------------------+
+| + addFirst(element) |
+| + addLast(element)  |
+| + removeFirst()     |
+| + removeLast()      |
+| + getFirst()        |
+| + getLast()         |
+| + offerFirst(element) |
+| + offerLast(element)  |
+| + pollFirst()       |
+| + pollLast()        |
+| + peekFirst()       |
+| + peekLast()        |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|      Queue        |
++-------------------+
+```
+
+### UML Diagram for [`Map`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1370%2C%22character%22%3A8%7D%7D%5D%2C%22e8fdf61d-2424-4c55-814c-1d4d7adea9cf%22%5D "Go to definition")
+```plaintext
++-------------------+
+|   <<interface>>   |
+|       Map         |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+```
+
+### UML Diagram for `HashMap`
+```plaintext
++-------------------+
+|     HashMap       |
++-------------------+
+| - table           |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|       Map         |
++-------------------+
+```
+
+### UML Diagram for `LinkedHashMap`
+```plaintext
++-------------------+
+|  LinkedHashMap    |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashMap       |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|       Map         |
++-------------------+
+```
+
+### UML Diagram for `TreeMap`
+```plaintext
++-------------------+
+|     TreeMap       |
++-------------------+
+| - root            |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|       Map         |
++-------------------+
+```
+
+These diagrams represent the structure and relationships of the primary collections in the Java 22 Collections API.
+
+In the Java Collections Framework, there are no combined types like `HashTreeMap`. Instead, the framework provides specific implementations for different types of collections, each optimized for particular use cases. Here are some of the primary implementations:
+
+1. **List Implementations**:
+   - `ArrayList`
+   - `LinkedList`
+   - `Vector`
+   - `Stack`
+
+2. **Set Implementations**:
+   - `HashSet`
+   - `LinkedHashSet`
+   - `TreeSet`
+
+3. **Queue Implementations**:
+   - `PriorityQueue`
+   - `LinkedList` (also implements `Deque`)
+
+4. **Deque Implementations**:
+   - `ArrayDeque`
+   - `LinkedList`
+
+5. **Map Implementations**:
+   - `HashMap`
+   - `LinkedHashMap`
+   - [`TreeMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FC%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUML%20Diagrams.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A194%2C%22character%22%3A21%7D%7D%5D%2C%22693fe99f-cf7e-452f-89b7-54f6a2164bfc%22%5D "Go to definition")
+   - `Hashtable`
+   - `ConcurrentHashMap`
+
+### UML Diagram for `ArrayList`
+```plaintext
++-------------------+
+|    ArrayList      |
++-------------------+
+| - elementData     |
+| - size            |
++-------------------+
+| + get(index)      |
+| + set(index, element) |
+| + add(index, element) |
+| + remove(index)   |
+| + indexOf(element)|
+| + lastIndexOf(element) |
+| + listIterator()  |
++-------------------+
+          ^
+          |
++-------------------+
+|       List        |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `LinkedList`
+```plaintext
++-------------------+
+|    LinkedList     |
++-------------------+
+| - first           |
+| - last            |
+| - size            |
++-------------------+
+| + get(index)      |
+| + set(index, element) |
+| + add(index, element) |
+| + remove(index)   |
+| + indexOf(element)|
+| + lastIndexOf(element) |
+| + listIterator()  |
+| + addFirst(element) |
+| + addLast(element)  |
+| + removeFirst()     |
+| + removeLast()      |
+| + getFirst()        |
+| + getLast()         |
++-------------------+
+          ^
+          |
++-------------------+
+|       List        |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+          ^
+          |
++-------------------+
+|      Queue        |
++-------------------+
+          ^
+          |
++-------------------+
+|      Deque        |
++-------------------+
+```
+
+### UML Diagram for `HashSet`
+```plaintext
++-------------------+
+|     HashSet       |
++-------------------+
+| - map             |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `LinkedHashSet`
+```plaintext
++-------------------+
+|  LinkedHashSet    |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashSet       |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `TreeSet`
+```plaintext
++-------------------+
+|     TreeSet       |
++-------------------+
+| - treeMap         |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `PriorityQueue`
+```plaintext
++-------------------+
+|  PriorityQueue    |
++-------------------+
+| - queue           |
+| - size            |
++-------------------+
+| + offer(element)  |
+| + poll()          |
+| + peek()          |
+| + add(element)    |
+| + remove()        |
+| + element()       |
++-------------------+
+          ^
+          |
++-------------------+
+|      Queue        |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `ArrayDeque`
+```plaintext
++-------------------+
+|    ArrayDeque     |
++-------------------+
+| - elements        |
+| - head            |
+| - tail            |
+| - size            |
++-------------------+
+| + addFirst(element) |
+| + addLast(element)  |
+| + removeFirst()     |
+| + removeLast()      |
+| + getFirst()        |
+| + getLast()         |
+| + offerFirst(element) |
+| + offerLast(element)  |
+| + pollFirst()       |
+| + pollLast()        |
+| + peekFirst()       |
+| + peekLast()        |
++-------------------+
+          ^
+          |
++-------------------+
+|      Deque        |
++-------------------+
+          ^
+          |
++-------------------+
+|      Queue        |
++-------------------+
+          ^
+          |
++-------------------+
+|   <<interface>>   |
+|    Collection     |
++-------------------+
+```
+
+### UML Diagram for `HashMap`
+```plaintext
++-------------------+
+|     HashMap       |
++-------------------+
+| - table           |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
+
+### UML Diagram for `LinkedHashMap`
+```plaintext
++-------------------+
+|  LinkedHashMap    |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashMap       |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
+
+### UML Diagram for [`TreeMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FC%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUML%20Diagrams.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A194%2C%22character%22%3A21%7D%7D%5D%2C%22693fe99f-cf7e-452f-89b7-54f6a2164bfc%22%5D "Go to definition")
+```plaintext
++-------------------+
+|     TreeMap       |
++-------------------+
+| - root            |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
+
+These diagrams represent the structure and relationships of the primary collections in the Java 22 Collections API. Each collection type has specific implementations optimized for different use cases, but they do not combine into hybrid types like `HashTreeMap`

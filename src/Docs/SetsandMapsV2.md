@@ -1172,3 +1172,204 @@ A `LinkedHashMap` is a HashMap with predictable iteration order. It maintains a 
      - `put(key, value)`, `get(key)`, `remove(key)`, `containsKey(key)`, `containsValue(value)`, `size()`, `clear()`, `keySet()`, `entrySet()`, `values()`: Basic map operations.
 
 These UML depictions provide a visual representation of the structure and relationships of `LinkedHashSet` and `LinkedHashMap` in Java, highlighting their inheritance hierarchy and key methods.
+
+To create UML diagrams for each ADT (Abstract Data Type) mentioned in the file [`SetsandMapsV2.md`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "c:\Users\18057\OneDrive\Desktop\Cuesta\Cuesta Fall 2024\Cis 232\InClassSept10\src\Docs\SetsandMapsV2.md"), we will focus on the following classes:
+
+1. [`Set`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A22%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+2. [`HashSet`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1026%2C%22character%22%3A6%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A13%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+3. [`LinkedHashSet`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1010%2C%22character%22%3A5%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+4. [`TreeSet`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+5. [`Map`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A61%2C%22character%22%3A22%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+6. [`HashMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A67%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+7. [`LinkedHashMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A68%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+8. [`TreeMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A1019%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+
+### UML Diagram for [`Set`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A3%2C%22character%22%3A22%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|       Set         |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+```
+
+### UML Diagram for [`HashSet`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1026%2C%22character%22%3A6%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A13%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|     HashSet       |
++-------------------+
+| - map             |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+```
+
+### UML Diagram for [`LinkedHashSet`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A1010%2C%22character%22%3A5%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A14%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|  LinkedHashSet    |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashSet       |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+```
+
+### UML Diagram for [`TreeSet`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|     TreeSet       |
++-------------------+
+| - treeMap         |
+| - size            |
++-------------------+
+| + add(element)    |
+| + remove(element) |
+| + contains(element) |
+| + size()          |
+| + clear()         |
+| + iterator()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+```
+
+### UML Diagram for [`Map`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A61%2C%22character%22%3A22%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|       Map         |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+```
+
+### UML Diagram for [`HashMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A67%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|     HashMap       |
++-------------------+
+| - table           |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
+
+### UML Diagram for [`LinkedHashMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A68%2C%22character%22%3A6%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|  LinkedHashMap    |
++-------------------+
+| - header          |
+| - tail            |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashMap       |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
+
+### UML Diagram for [`TreeMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A15%2C%22character%22%3A1019%7D%7D%5D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "Go to definition")
+```plaintext
++-------------------+
+|     TreeMap       |
++-------------------+
+| - root            |
+| - size            |
++-------------------+
+| + put(key, value) |
+| + get(key)        |
+| + remove(key)     |
+| + containsKey(key)|
+| + containsValue(value) |
+| + size()          |
+| + clear()         |
+| + keySet()        |
+| + values()        |
+| + entrySet()      |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
+
+These diagrams represent the structure and relationships of the ADTs mentioned in the file [`SetsandMapsV2.md`](command:_github.copilot.openRelativePath?%5B%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FSetsandMapsV2.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%228816c975-ec5e-41fa-b20f-c942cf4478f9%22%5D "c:\Users\18057\OneDrive\Desktop\Cuesta\Cuesta Fall 2024\Cis 232\InClassSept10\src\Docs\SetsandMapsV2.md").
