@@ -22,6 +22,27 @@ Constraints:
 */
 package Main;
 
-public class Leetcode217 {
+import java.util.HashSet;
 
+public class Leetcode217 {
+    public static boolean containsDuplicate(int[] nums) {
+        HashSet<Integer> seen = new HashSet<>();
+        for (int num : nums) {
+            if (seen.contains(num)) {
+                return true; // Duplicate found
+            }
+            seen.add(num);
+        }
+        return false; // No duplicates
+    }
+
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2, 3, 1};
+        int[] nums2 = {1, 2, 3, 4};
+        int[] nums3 = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
+
+        System.out.println(containsDuplicate(nums1)); // Output: true
+        System.out.println(containsDuplicate(nums2)); // Output: false
+        System.out.println(containsDuplicate(nums3)); // Output: true
+    }
 }
