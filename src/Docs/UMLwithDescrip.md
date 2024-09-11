@@ -1,6 +1,4 @@
-Sure, I'll recreate the UML diagrams with descriptions of the fields and methods for each collection type. 
-
-### UML Diagram for `Collection`
+### UML Diagram for [`Collection`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A424%2C%22character%22%3A4%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A2%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |   <<interface>>   |
@@ -16,7 +14,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for `List`
+### UML Diagram for [`List`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A18%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |   <<interface>>   |
@@ -39,7 +37,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for `Set`
+### UML Diagram for [`Set`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A423%2C%22character%22%3A4%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A41%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |   <<interface>>   |
@@ -61,7 +59,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for `Queue`
+### UML Diagram for [`Queue`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A63%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |   <<interface>>   |
@@ -83,7 +81,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for `Deque`
+### UML Diagram for [`Deque`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A85%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |   <<interface>>   |
@@ -116,7 +114,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for [`Map`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FC%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUML%20Diagrams.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A565%2C%22character%22%3A8%7D%7D%5D%2C%224d94ebd4-46d1-4718-a049-eb8d2a876f52%22%5D "Go to definition")
+### UML Diagram for [`Map`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A425%2C%22character%22%3A8%7D%7D%2C%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A118%2C%22character%22%3A22%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |   <<interface>>   |
@@ -136,7 +134,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for `HashMap`
+### UML Diagram for [`HashMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A138%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |     HashMap       |
@@ -164,7 +162,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for `LinkedHashMap`
+### UML Diagram for [`LinkedHashMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A166%2C%22character%22%3A21%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |  LinkedHashMap    |
@@ -198,7 +196,7 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 +-------------------+
 ```
 
-### UML Diagram for [`TreeMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2FC%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUML%20Diagrams.txt%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A546%2C%22character%22%3A6%7D%7D%5D%2C%224d94ebd4-46d1-4718-a049-eb8d2a876f52%22%5D "Go to definition")
+### UML Diagram for [`TreeMap`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FUMLwithDescrip.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A200%2C%22character%22%3A22%7D%7D%5D%2C%22e4d44679-3204-4b3f-8f90-bd39599869de%22%5D "Go to definition")
 ```plaintext
 +-------------------+
 |     TreeMap       |
@@ -225,5 +223,3 @@ Sure, I'll recreate the UML diagrams with descriptions of the fields and methods
 |       Map         |
 +-------------------+
 ```
-
-These diagrams now include descriptions of the fields and methods for each collection type in the Java Collections Framework.

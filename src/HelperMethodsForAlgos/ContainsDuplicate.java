@@ -1,16 +1,15 @@
 package HelperMethodsForAlgos;
-
 import java.util.HashSet;
-
 
 public class ContainsDuplicate {
     public static boolean containsDuplicate(int[] nums) {
-        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> seen = new HashSet<>(); // Create a HashSet to store seen numbers      
         for (int num : nums) {
-            if (!set.add(num)) { // If there is a duplicate, the add() will return false
-                return true;
+            if (seen.contains(num)) { // .contains() is a method that checks if the HashSet contains the number
+                return true; // Duplicate found
             }
+            seen.add(num);
         }
-        return false;
+        return false; // No duplicates
     }
 }
