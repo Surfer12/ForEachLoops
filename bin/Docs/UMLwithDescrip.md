@@ -223,3 +223,102 @@
 |       Map         |
 +-------------------+
 ```
+### UML Diagram for `HashSet`
+```plaintext
++-------------------+
+|     HashSet       |
++-------------------+
+| Fields:           |
+| - int capacity                    // The capacity of the hash table. |
+| - float loadFactor                // The load factor of the hash table. |
++-------------------+
+| Methods:          |
+| + boolean add(E e)                // Adds an element to the set. |
+| + boolean remove(Object o)        // Removes a single instance of the specified element. |
+| + boolean contains(Object o)      // Returns true if the set contains the specified element. |
+| + int size()                      // Returns the number of elements in the set. |
+| + void clear()                    // Removes all elements from the set. |
+| + Iterator<E> iterator()          // Returns an iterator over the elements in the set. |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+```
+
+### UML Diagram for `LinkedHashSet`
+```plaintext
++-------------------+
+|  LinkedHashSet    |
++-------------------+
+| Fields:           |
+| - Entry<E> header                 // The head of the doubly-linked list. |
+| - Entry<E> tail                   // The tail of the doubly-linked list. |
++-------------------+
+| Methods:          |
+| + boolean add(E e)                // Adds an element to the set. |
+| + boolean remove(Object o)        // Removes a single instance of the specified element. |
+| + boolean contains(Object o)      // Returns true if the set contains the specified element. |
+| + int size()                      // Returns the number of elements in the set. |
+| + void clear()                    // Removes all elements from the set. |
+| + Iterator<E> iterator()          // Returns an iterator over the elements in the set. |
++-------------------+
+          ^
+          |
++-------------------+
+|     HashSet       |
++-------------------+
+```
+
+### UML Diagram for `TreeSet`
+```plaintext
++-------------------+
+|     TreeSet       |
++-------------------+
+| Fields:           |
+| - Comparator<? super E> comparator // The comparator used to order the elements in this set. |
+| - NavigableMap<E,Object> m         // The backing map. |
++-------------------+
+| Methods:          |
+| + boolean add(E e)                // Adds an element to the set. |
+| + boolean remove(Object o)        // Removes a single instance of the specified element. |
+| + boolean contains(Object o)      // Returns true if the set contains the specified element. |
+| + int size()                      // Returns the number of elements in the set. |
+| + void clear()                    // Removes all elements from the set. |
+| + Iterator<E> iterator()          // Returns an iterator over the elements in the set. |
++-------------------+
+          ^
+          |
++-------------------+
+|       Set         |
++-------------------+
+```
+
+### UML Diagram for `HashMap`
+```plaintext
++-------------------+
+|     HashMap       |
++-------------------+
+| Fields:           |
+| - transient Node<K,V>[] table     // The table array where the hash table is stored. |
+| - transient int size              // The number of key-value mappings in the map. |
++-------------------+
+| Methods:          |
+| + V put(K key, V value)           // Associates the specified value with the specified key in the map. |
+| + V get(Object key)               // Returns the value to which the specified key is mapped. |
+| + V remove(Object key)            // Removes the mapping for a key from the map. |
+| + boolean containsKey(Object key) // Returns true if the map contains a mapping for the specified key. |
+| + boolean containsValue(Object value) // Returns true if the map maps one or more keys to the specified value. |
+| + int size()                      // Returns the number of key-value mappings in the map. |
+| + void clear()                    // Removes all mappings from the map. |
+| + Set<K> keySet()                 // Returns a set view of the keys contained in the map. |
+| + Collection<V> values()          // Returns a collection view of the values contained in the map. |
+| + Set<Map.Entry<K, V>> entrySet() // Returns a set view of the mappings contained in the map. |
++-------------------+
+          ^
+          |
++-------------------+
+|       Map         |
++-------------------+
+```
