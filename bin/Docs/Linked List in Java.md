@@ -252,20 +252,20 @@ public class SinglyLinkedListWithTail {
 
 To create a UML diagram for the different types of linked lists (Singly Linked List, Doubly Linked List, and Circular Linked List), we can outline the classes and their relationships. Below is a textual representation of the UML diagram:
 
-### UML Diagram
+### UML Diagram with Comments
 
 ```plaintext
 +---------------------+
 |      LinkedList     |
 +---------------------+
-| - head: Node        |
-| - tail: Node        |
+| - head: Node        |  // Reference to the first node in the list
+| - tail: Node        |  // Reference to the last node in the list (optional)
 +---------------------+
-| + insertAtBeginning(data: int): void |
-| + insertAtEnd(data: int): void       |
-| + deleteByValue(data: int): void     |
-| + traverse(): void                   |
-| + search(data: int): boolean         |
+| + insertAtBeginning(data: int): void |  // Inserts a node at the beginning
+| + insertAtEnd(data: int): void       |  // Inserts a node at the end
+| + deleteByValue(data: int): void     |  // Deletes a node by value
+| + traverse(): void                   |  // Traverses the list
+| + search(data: int): boolean         |  // Searches for a node by value
 +---------------------+
 
         ^
@@ -274,14 +274,14 @@ To create a UML diagram for the different types of linked lists (Singly Linked L
 +---------------------+
 |  SinglyLinkedList   |
 +---------------------+
-| - head: Node        |
-| - tail: Node        |
+| - head: Node        |  // Reference to the first node in the list
+| - tail: Node        |  // Reference to the last node in the list (optional)
 +---------------------+
-| + insertAtBeginning(data: int): void |
-| + insertAtEnd(data: int): void       |
-| + deleteByValue(data: int): void     |
-| + traverse(): void                   |
-| + search(data: int): boolean         |
+| + insertAtBeginning(data: int): void |  // Inserts a node at the beginning
+| + insertAtEnd(data: int): void       |  // Inserts a node at the end
+| + deleteByValue(data: int): void     |  // Deletes a node by value
+| + traverse(): void                   |  // Traverses the list
+| + search(data: int): boolean         |  // Searches for a node by value
 +---------------------+
 
         ^
@@ -290,14 +290,14 @@ To create a UML diagram for the different types of linked lists (Singly Linked L
 +---------------------+
 |  DoublyLinkedList   |
 +---------------------+
-| - head: Node        |
-| - tail: Node        |
+| - head: Node        |  // Reference to the first node in the list
+| - tail: Node        |  // Reference to the last node in the list
 +---------------------+
-| + insertAtBeginning(data: int): void |
-| + insertAtEnd(data: int): void       |
-| + deleteByValue(data: int): void     |
-| + traverse(): void                   |
-| + search(data: int): boolean         |
+| + insertAtBeginning(data: int): void |  // Inserts a node at the beginning
+| + insertAtEnd(data: int): void       |  // Inserts a node at the end
+| + deleteByValue(data: int): void     |  // Deletes a node by value
+| + traverse(): void                   |  // Traverses the list
+| + search(data: int): boolean         |  // Searches for a node by value
 +---------------------+
 
         ^
@@ -306,24 +306,49 @@ To create a UML diagram for the different types of linked lists (Singly Linked L
 +---------------------+
 | CircularLinkedList  |
 +---------------------+
-| - head: Node        |
-| - tail: Node        |
+| - head: Node        |  // Reference to the first node in the list
+| - tail: Node        |  // Reference to the last node in the list
 +---------------------+
-| + insertAtBeginning(data: int): void |
-| + insertAtEnd(data: int): void       |
-| + deleteByValue(data: int): void     |
-| + traverse(): void                   |
-| + search(data: int): boolean         |
+| + insertAtBeginning(data: int): void |  // Inserts a node at the beginning
+| + insertAtEnd(data: int): void       |  // Inserts a node at the end
+| + deleteByValue(data: int): void     |  // Deletes a node by value
+| + traverse(): void                   |  // Traverses the list
+| + search(data: int): boolean         |  // Searches for a node by value
 +---------------------+
 
 +---------------------+
 |        Node         |
 +---------------------+
-| - data: int         |
-| - next: Node        |
-| - prev: Node        | // Only for DoublyLinkedList
+| - data: int         |  // Data stored in the node
+| - next: Node        |  // Reference to the next node
+| - prev: Node        |  // Reference to the previous node (only for DoublyLinkedList)
 +---------------------+
 ```
+
+### Explanation
+- **LinkedList**: An abstract class or interface that defines common operations for all types of linked lists.
+  - [`head`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FLinked%20List%20in%20Java.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A177%2C%22character%22%3A12%7D%7D%5D%2C%22b66f9332-0157-4b21-9c44-99a4094a0014%22%5D "Go to definition"): Reference to the first node in the list.
+  - [`tail`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FLinked%20List%20in%20Java.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A179%2C%22character%22%3A12%7D%7D%5D%2C%22b66f9332-0157-4b21-9c44-99a4094a0014%22%5D "Go to definition"): Reference to the last node in the list (optional, used for optimization).
+  - `insertAtBeginning(data: int)`: Inserts a node at the beginning of the list.
+  - `insertAtEnd(data: int)`: Inserts a node at the end of the list.
+  - `deleteByValue(data: int)`: Deletes a node by its value.
+  - `traverse()`: Traverses the list and prints the elements.
+  - `search(data: int)`: Searches for a node by its value.
+
+- **SinglyLinkedList**: Extends `LinkedList` and implements a singly linked list.
+  - Inherits all properties and methods from `LinkedList`.
+
+- **DoublyLinkedList**: Extends `LinkedList` and implements a doubly linked list with an additional `prev` pointer in the [`Node`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FLinked%20List%20in%20Java.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A176%2C%22character%22%3A8%7D%7D%5D%2C%22b66f9332-0157-4b21-9c44-99a4094a0014%22%5D "Go to definition") class.
+  - Inherits all properties and methods from `LinkedList`.
+  - `prev`: Reference to the previous node (only for DoublyLinkedList).
+
+- **CircularLinkedList**: Extends `LinkedList` and implements a circular linked list where the last node points back to the first node.
+  - Inherits all properties and methods from `LinkedList`.
+
+- **Node**: Represents a node in the linked list.
+  - [`data`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FLinked%20List%20in%20Java.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A175%2C%22character%22%3A38%7D%7D%5D%2C%22b66f9332-0157-4b21-9c44-99a4094a0014%22%5D "Go to definition"): Data stored in the node.
+  - [`next`](command:_github.copilot.openSymbolFromReferences?%5B%22%22%2C%5B%7B%22uri%22%3A%7B%22scheme%22%3A%22file%22%2C%22authority%22%3A%22%22%2C%22path%22%3A%22%2Fc%3A%2FUsers%2F18057%2FOneDrive%2FDesktop%2FOneDriveDesktop%2FCuesta%2FCuesta%20Fall%202024%2FCis%20232%2FInClassSept10%2Fsrc%2FDocs%2FLinked%20List%20in%20Java.md%22%2C%22query%22%3A%22%22%2C%22fragment%22%3A%22%22%7D%2C%22pos%22%3A%7B%22line%22%3A181%2C%22character%22%3A20%7D%7D%5D%2C%22b66f9332-0157-4b21-9c44-99a4094a0014%22%5D "Go to definition"): Reference to the next node.
+  - `prev`: Reference to the previous node (only for DoublyLinkedList).
 
 ### Explanation
 - **LinkedList**: An abstract class or interface that defines common operations for all types of linked lists.
